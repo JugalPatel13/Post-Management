@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="card row m-0 p-0">
+        <div class="m-0 p-0 border-bottom">{{post.title}}</div>
+        <div class="m-0 p-0 border-bottom">{{post.body}}</div>
+        <div class="m-2 p-0 border" *ngFor="let comment of comments">
+            <div class="d-flex flex-row justify-content-between">
+                <div class="m-0 p-0">{{comment.name}}</div>
+                <div class="m-0 p-0">{{comment.email}}</div>
+            </div>
+            <div class="m-0 p-0">{{comment.body}}</div>
+        </div>
+    </div>
+</div>
